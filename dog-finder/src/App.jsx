@@ -1,17 +1,20 @@
 import React from 'react';
-import {Switch, Navigate, Route} from "react-router-dom";
+import {Routes, Navigate, Route} from "react-router-dom";
 import './App.css';
+
+import DogList from "./DogList.jsx";
+import FilterDogDetails from "./FilterDogDetails.jsx";
 
 function App({dogsInfo}) {
 
   return (
    <div className="App">
-    <Nav/>
-    <Switch>
-      <Route path="/dogs" element={<DogList/>} />
-      <Route path="/dogs/:name" element={<DogDetails/>} />
+    {/*<Nav/>*/}
+    <Routes>
+      <Route path="/dogs" element={<DogList dogsBriefInfo={dogsInfo}/>} />
+      <Route path="/dogs/:name" element={<FilterDogDetails allDogsInfo={dogsInfo}/>} />
       <Route path="*" element={<Navigate to="/dogs" />} />
-    </Switch>
+    </Routes>
    </div>
   );
 }
@@ -51,7 +54,7 @@ App.defaultProps = {
     {
       name: "Tubby",
       age: 4,
-      src: "images.tubby.jpg",
+      src: "images/tubby.jpg",
       facts: [
         "Tubby is really stupid.",
         "Tubby does not like walks.",
