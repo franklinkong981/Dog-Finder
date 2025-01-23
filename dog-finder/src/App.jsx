@@ -2,14 +2,14 @@ import React from 'react';
 import {Switch, Navigate, Route} from "react-router-dom";
 import './App.css';
 
-function App({dogs}) {
+function App({dogsInfo}) {
 
   return (
    <div className="App">
     <Nav/>
     <Switch>
       <Route path="/dogs" element={<DogList/>} />
-      <Route path="/dogs:name" element={<DogDetails/>} />
+      <Route path="/dogs/:name" element={<DogDetails/>} />
       <Route path="*" element={<Navigate to="/dogs" />} />
     </Switch>
    </div>
@@ -17,7 +17,7 @@ function App({dogs}) {
 }
 
 App.defaultProps = {
-  dogs: [
+  dogsInfo: [
     {
       name: "Whiskey",
       age: 5,
