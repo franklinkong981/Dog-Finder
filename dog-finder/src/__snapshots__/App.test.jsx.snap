@@ -1,0 +1,128 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Test <App/> rendering > matches the snapshot for the MadLibs component 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <nav
+      class="Nav"
+    >
+      <a
+        class="inactive"
+        data-discover="true"
+        href="/dogs/Whiskey"
+      >
+        Whiskey
+      </a>
+      <a
+        class="inactive"
+        data-discover="true"
+        href="/dogs/Duke"
+      >
+        Duke
+      </a>
+      <a
+        class="inactive"
+        data-discover="true"
+        href="/dogs/Perry"
+      >
+        Perry
+      </a>
+      <a
+        class="inactive"
+        data-discover="true"
+        href="/dogs/Tubby"
+      >
+        Tubby
+      </a>
+    </nav>
+    <div
+      class="DogList"
+    >
+      <h1
+        class="DogList-header"
+      >
+        Welcome to the Dog Finder!
+      </h1>
+      <h2
+        class="DogList-header-2"
+      >
+        List of dogs:
+      </h2>
+      <div
+        class="DogList-dog"
+      >
+        <img
+          alt="Picture of Whiskey"
+          class="DogList-dog-picture"
+          src="/src/assets/images/whiskey.jpg"
+        />
+        <br />
+        <a
+          class="DogList-dog-name"
+          data-discover="true"
+          href="/dogs/Whiskey"
+        >
+          Whiskey - 5 years old
+        </a>
+        <hr />
+      </div>
+      <div
+        class="DogList-dog"
+      >
+        <img
+          alt="Picture of Duke"
+          class="DogList-dog-picture"
+          src="/src/assets/images/duke.jpg"
+        />
+        <br />
+        <a
+          class="DogList-dog-name"
+          data-discover="true"
+          href="/dogs/Duke"
+        >
+          Duke - 3 years old
+        </a>
+        <hr />
+      </div>
+      <div
+        class="DogList-dog"
+      >
+        <img
+          alt="Picture of Perry"
+          class="DogList-dog-picture"
+          src="/src/assets/images/perry.jpg"
+        />
+        <br />
+        <a
+          class="DogList-dog-name"
+          data-discover="true"
+          href="/dogs/Perry"
+        >
+          Perry - 4 years old
+        </a>
+        <hr />
+      </div>
+      <div
+        class="DogList-dog"
+      >
+        <img
+          alt="Picture of Tubby"
+          class="DogList-dog-picture"
+          src="/src/assets/images/tubby.jpg"
+        />
+        <br />
+        <a
+          class="DogList-dog-name"
+          data-discover="true"
+          href="/dogs/Tubby"
+        >
+          Tubby - 4 years old
+        </a>
+        <hr />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

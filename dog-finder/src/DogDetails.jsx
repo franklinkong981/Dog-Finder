@@ -1,4 +1,5 @@
 import React from "react";
+import {v4 as uuid} from 'uuid';
 
 const DogDetails = ({dogInfo}) => {
   return (
@@ -9,7 +10,7 @@ const DogDetails = ({dogInfo}) => {
       <h4 className="DogDetails-facts-header">Fun facts about {dogInfo.name}:</h4>
       <ul className="DogDetails-facts">
         {dogInfo.facts.map((fact) => (
-          <li className="DogDetails-fact">{fact}</li>
+          <li key={uuid()} className="DogDetails-fact">{fact}</li>
         ))}
       </ul>
     </div>
