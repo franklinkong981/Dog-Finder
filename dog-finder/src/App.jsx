@@ -5,13 +5,18 @@ import './App.css';
 import DogList from "./DogList.jsx";
 import FilterDogDetails from "./FilterDogDetails.jsx";
 
+import Whiskey from "./assets/images/whiskey.jpg";
+import Perry from "./assets/images/perry.jpg";
+import Duke from "./assets/images/duke.jpg";
+import Tubby from "./assets/images/tubby.jpg";
+
 function App({dogsInfo}) {
 
   return (
    <div className="App">
     {/*<Nav/>*/}
     <Routes>
-      <Route path="/dogs" element={<DogList dogsBriefInfo={dogsInfo}/>} />
+      <Route path="/dogs" element={<DogList dogsInfo={dogsInfo}/>} />
       <Route path="/dogs/:name" element={<FilterDogDetails allDogsInfo={dogsInfo}/>} />
       <Route path="*" element={<Navigate to="/dogs" />} />
     </Routes>
@@ -24,7 +29,7 @@ App.defaultProps = {
     {
       name: "Whiskey",
       age: 5,
-      src: "images/whiskey.jpg",
+      src: Whiskey,
       facts: [
         "Whiskey loves eating popcorn.",
         "Whiskey is a terrible guard dog.",
@@ -34,7 +39,7 @@ App.defaultProps = {
     {
       name: "Duke",
       age: 3,
-      src: "images/duke.jpg",
+      src: Duke,
       facts: [
         "Duke believes that ball is life.",
         "Duke likes snow",
@@ -44,7 +49,7 @@ App.defaultProps = {
     {
       name: "Perry",
       age: 4,
-      src: "images/perry.jpg",
+      src: Perry,
       facts: [
         "Perry loves all humans.",
         "Perry demolishes all snacks.",
@@ -54,7 +59,7 @@ App.defaultProps = {
     {
       name: "Tubby",
       age: 4,
-      src: "images/tubby.jpg",
+      src: Tubby,
       facts: [
         "Tubby is really stupid.",
         "Tubby does not like walks.",
