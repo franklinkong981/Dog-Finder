@@ -2,6 +2,7 @@ import React from 'react';
 import {Routes, Navigate, Route} from "react-router-dom";
 import './App.css';
 
+import Nav from "./Nav.jsx";
 import DogList from "./DogList.jsx";
 import FilterDogDetails from "./FilterDogDetails.jsx";
 
@@ -14,7 +15,7 @@ function App({dogsInfo}) {
 
   return (
    <div className="App">
-    {/*<Nav/>*/}
+    <Nav names={dogsInfo.map((dog) => dog.name)}/>
     <Routes>
       <Route path="/dogs" element={<DogList dogsInfo={dogsInfo}/>} />
       <Route path="/dogs/:name" element={<FilterDogDetails allDogsInfo={dogsInfo}/>} />

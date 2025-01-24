@@ -1,0 +1,19 @@
+.Nav {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+a.active {
+  color: red;
+  font-weight: bold;
+}
+
+a.pending {
+  color: blue;
+}
+
+a.inactive{
+  color: green;
+}
